@@ -3,14 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Responsive Layout</title>
+<title>Lyda</title>
 <style>
 
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-}
-h1 {
+
+h2 {
   text-align: center;
   font-size: 75px;
   
@@ -18,13 +15,15 @@ h1 {
 
 p {
   border: 1px solid black;
-  background-color: #A52A2A;
+  background-color: #FF69B4;
   width: 90%;
   height: 150px;
   margin-right: auto;
   margin-left: auto;
   font-family: Helvetica;
   color: white;
+  padding-bottom: 10px;
+ 
 }
 
 /* Simple Responsive Framework. */
@@ -32,11 +31,37 @@ p {
   width: 100%;
 }
 
+.title{
+	  float: right;
+	  padding:10px;
+	   border: 1px solid black;
+	font-family: Helvetica;
+	font-weight: bold;
+	
+	
+  }
+  
+  .first{
+	  background-color:#2196F3;
+  }
+  .second{
+	   background-color:#ff9800;
+  }
+  .third{
+	  background-color:#04AA6D;
+  }
+  
+  .description {
+    margin-top:20px; 
+    padding-left:10px; 
+    display:inline-block;
+	 
+  }
 /********** Mobile devices only **********/
-@media  (max-width: 767px) {
+@media  min-width: 400px) and (max-width: 767px) {
  .col-lg-3 {
     float: left;
-    border: 1px solid green;
+  
   }
 
   .col-lg-3 {
@@ -59,7 +84,7 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
  .col-lg-3 {
     float: left;
-    border: 1px solid green;
+   
   }
 
   .col-lg-3 {
@@ -76,6 +101,8 @@ p {
   float: right;
   }
 }
+
+
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
@@ -94,39 +121,17 @@ p {
   .div{
   float : right;
   }
-  .title{
-	  float: right;
-	  padding:10px;
-	   border: 1px solid black;
-	font-family: Helvetica;
-	font-weight: bold;
-	
-  }
   
-  .first{
-	  background-color:#2196F3;
-  }
-  .second{
-	   background-color:#ff9800;
-  }
-  .third{
-	  background-color:#04AA6D;
-  }
-  
-  .description {
-	font-weight: bold;
-	 padding-left:10px;
-  }
 }
 </style>
 </head>
 <body>
-<h1>Elora Menu </h1>
+<h2>Elora Menu </h2>
 
 <div class="row">
-  <div class="col-lg-3"><p><span class='title first'>ICE Cream</span></br></br></br><span class='description'> Elora like Ice cream so much in summer</span></p></div>
-  <div class="col-lg-3"><p><span class='title second'>CHOCOLATE</span></br></br></br><span class='description'>Elora like CHOCOLATE so much, when she need she will try for it</span></p></div>
-  <div class="col-lg-3"><p><span class='title third'>PIZZA</span></br> </br></br><span class='description'>Elora like PIZZA so much when she is hungry </span></p></div>
+  <div class="col-lg-3"><p><span class='title first'>ICE Cream</span></br></br></br><span class='description'> A soft, sweet frozen food made with milk and cream and typically flavoured with vanilla, fruit, or other ingredients</span></p></div>
+  <div class="col-lg-3"><p><span class='title second'>CHOCOLATE</span></br></br></br><span class='description'>A food in the form of a paste or solid block made from roasted and ground cacao seeds, typically sweetened and eaten as confectionery.</span></p></div>
+  <div class="col-lg-3"><p><span class='title third'>PIZZA</span></br> </br></br><span class='description'>A dish of Italian origin, consisting of a flat round base of dough baked with a topping of tomatoes and cheese, typically with added meat, fish, or vegetables. </span></p></div>
  </div>
 
 </body>
