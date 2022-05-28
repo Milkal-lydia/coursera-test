@@ -2,62 +2,116 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Media Queries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
 <style>
 
 /********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
 h1 {
   margin-bottom: 15px;
 }
 
 p {
   border: 1px solid black;
-  margin-bottom: 15px;
-}
-#p1 {
   background-color: #A52A2A;
-  width: 300px;
-  height: 300px;
-}
-#p2 {
-  background-color: #DEB887;
-  width: 50px;
-  height: 50px;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
 }
 
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  #p1 {
-    width: 80%;
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Mobile devices only **********/
+@media  (max-width: 767px) {
+ .col-lg-3 {
+    float: left;
+    border: 1px solid green;
   }
-  #p2 {
-    width: 150px;
-    height: 150px;
+
+  .col-lg-3 {
+    width: 100%;
+  }
+  
+  .col-lg-6 {
+    width: 100%;
+  }
+  .div{
+  float : right;
+  }
+  .title{
+  float: right;
   }
 }
 
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  #p1 {
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+ .col-lg-3 {
+    float: left;
+    border: 1px solid green;
+  }
+
+  .col-lg-3 {
     width: 50%;
   }
-  #p2 {
-    width: 100px;
-    height: 100px;
+  
+  .col-lg-6 {
+    width: 50%;
   }
-  body {
-    background-color: blue;
+  .div{
+  float : right;
+  }
+  .title{
+  float: right;
   }
 }
+
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+ .col-lg-3 {
+    float: left;
+    border: 1px solid green;
+  }
+
+  .col-lg-3 {
+    width: 33%;
+  }
+  
+  .col-lg-6 {
+    width: 33%;
+  }
+  .div{
+  float : right;
+  }
+  .title{
+  float: right;
+  }
+}
+
+
 
 </style>
 </head>
 <body>
-<h1>Media Queries</h1>
+<h1>Responsive Layout</h1>
 
-<p id="p1"> test</p>
-<p id="p2">test 2</p>
+<div class="row">
+  <div class="col-lg-3 "><p><span class='title'>ICE Cream</span></br> this is our </p></div>
+  <div class="col-lg-3"><p>Chakede</p></div>
+  <div class="col-lg-3"><p>PIZZA</p></div>
+  
+</div>
 
 </body>
 </html>

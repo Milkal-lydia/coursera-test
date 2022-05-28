@@ -1,0 +1,28 @@
+
+/********** Base styles **********/
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+  
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+
+  .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+	 
+  gap: 1rem;
+  
+
+
+   
+}
+
+
+}
