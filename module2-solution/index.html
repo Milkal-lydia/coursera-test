@@ -11,7 +11,9 @@
   box-sizing: border-box;
 }
 h1 {
-  margin-bottom: 15px;
+  text-align: center;
+  font-size: 75px;
+  
 }
 
 p {
@@ -75,13 +77,11 @@ p {
   }
 }
 
-
-
 /********** Large devices only **********/
 @media (min-width: 992px) {
  .col-lg-3 {
     float: left;
-    border: 1px solid green;
+    border: 1px;
   }
 
   .col-lg-3 {
@@ -95,23 +95,39 @@ p {
   float : right;
   }
   .title{
-  float: right;
+	  float: right;
+	  padding:10px;
+	   border: 1px solid black;
+	font-family: Helvetica;
+	font-weight: bold;
+	
+  }
+  
+  .first{
+	  background-color:#2196F3;
+  }
+  .second{
+	   background-color:#ff9800;
+  }
+  .third{
+	  background-color:#04AA6D;
+  }
+  
+  .description {
+	font-weight: bold;
+	 padding-left:10px;
   }
 }
-
-
-
 </style>
 </head>
 <body>
-<h1>Responsive Layout</h1>
+<h1>Elora Menu </h1>
 
 <div class="row">
-  <div class="col-lg-3 "><p><span class='title'>ICE Cream</span></br> this is our </p></div>
-  <div class="col-lg-3"><p>Chakede</p></div>
-  <div class="col-lg-3"><p>PIZZA</p></div>
-  
-</div>
+  <div class="col-lg-3"><p><span class='title first'>ICE Cream</span></br></br></br><span class='description'> Elora like Ice cream so much in summer</span></p></div>
+  <div class="col-lg-3"><p><span class='title second'>CHOCOLATE</span></br></br></br><span class='description'>Elora like CHOCOLATE so much, when she need she will try for it</span></p></div>
+  <div class="col-lg-3"><p><span class='title third'>PIZZA</span></br> </br></br><span class='description'>Elora like PIZZA so much when she is hungry </span></p></div>
+ </div>
 
 </body>
 </html>
