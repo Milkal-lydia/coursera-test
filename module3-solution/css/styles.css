@@ -1,0 +1,23 @@
+h2 {
+  text-align: center;
+  font-size: 75px;
+  
+}
+
+.first{
+	  background-color:#2196F3;
+  }
+  .second{
+	   background-color:#ff9800;
+  }
+  .third{
+	  background-color:#04AA6D;
+  }
+  
+  .title{
+	  padding:10px;
+	   border: 1px solid black;
+	font-family: Helvetica;
+	font-weight: bold;
+
+  }
